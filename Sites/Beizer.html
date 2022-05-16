@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Nike SB</title>
+ <link rel="stylesheet" href="../style.css">
+ <link rel="icon" type="image/x-icon" href="../Slike/favicon.png">
+</head>
+<body>
+<a href="../nike.html"><img src="../Slike/logo.svg" alt="logo" height="8%" width="8%"></a>
+<div id="menu">
+	<div id="menu1">
+		<a href="SVG.html">SVG</a>
+	</div>
+	<div id="menu1">
+		<a href="Beizer.html">BEIZER</a>
+	</div>
+	<div id="menu1">
+		<a href="PNG.html">PNG</a>
+	</div>
+
+</div>
+<div id="tshirt1">
+<canvas id="canvas" width="500" height="750"></canvas> 
+</div>
+<script>
+	var canvas = document.getElementById('canvas');
+	var context = canvas.getContext('2d')
+	context.beginPath();
+	context.moveTo(140, 154);
+	context.bezierCurveTo(12, 406, 384, 189, 504, 153);
+	context.stroke();
+	context.moveTo(504, 153);
+	context.bezierCurveTo(384, 189, 101, 297, 140, 154);
+	context.stroke();
+	context.fillStyle='white';
+	context.fill();
+	
+</script>
+<footer>
+<div id="footerlogo">
+</div>
+<a id="instagram" href="https://www.instagram.com/nikesb/?hl=en" alt="ig"><img src="../Slike/instagram1.png" alt="insta" height="30px" width="30px"></a>
+<a id="termsofuse" href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=termsOfUse&uxId=com.nike.nikesb&country=US&requestType=styled" alt="tou">Terms Of Use</a>
+<a id="privacypolicy" href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&uxId=com.nike.nikesb&country=US&requestType=styled" alt="pp">Privacy Policy</a>
+</footer>
+</body>
+</html>
